@@ -1,0 +1,18 @@
+[Unit]
+Description=ARMA3 Server
+After=network.target
+
+[Service]
+WorkingDirectory=/home/steamcmd/Steam/steamapps/common/Arma3
+User=arma
+Group=steamcmd
+Type=forking
+TimeoutStartSec=20
+ExecStart=/home/steamcmd/Steam/steamapps/common/Arma3/a3start.sh start
+TimeoutStopSec=20
+ExecStop=/home/steamcmd/Steam/steamapps/common/Arma3/a3start.sh stop
+RestartSec=20
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
