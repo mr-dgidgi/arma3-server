@@ -25,7 +25,8 @@ dpkg --add-architecture i386
 apt update
 apt install steamcmd -y
 ```
-Install steamcmd with the steamcmd user
+Install steamcmd with the steamcmd use
+
 cf : https://developer.valvesoftware.com/wiki/SteamCMD#Debian
 
 ### Arma3 server installed with steamcmd
@@ -90,5 +91,5 @@ systemctl enable arma3
 
 ## More tips
 
-Don't forget to setup a logrotate
+Don't forget to setup a logrotate.
 Arma server need to be restarted frequently if you run a persistant mission like Antistasi or Exile. You can setup a cron or systemd timer to restart it.
